@@ -1,15 +1,16 @@
+/* eslint-disable linebreak-style */
 const express = require('express');
 
-const emojis = require('./emojis');
+const weather = require('./weather');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/test', (req, res) => {
   res.json({
     message: 'API - 👋🌎🌍🌏'
   });
 });
 
-router.use('/emojis', emojis);
+router.use('/weather', weather);
 
 module.exports = router;
