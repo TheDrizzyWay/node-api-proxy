@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 const amqp = require('amqplib');
+require('dotenv').config();
 
 const connect = async (req, res) => {
   try {
